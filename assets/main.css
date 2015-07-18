@@ -1,6 +1,6 @@
 /* Body Tag */
 body {
-  background-image: url(metal_background.jpg);
+  background-image: url(album_background.jpg);
   background-attachment: fixed;
   color: white;
   font-weight: 300;
@@ -12,25 +12,16 @@ body {
   top: 0;
   width: 100%;
   height: 47px;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: #66cc99;
+  box-shadow: 2px 3px 10px rgba(50, 50, 50, 0.75);
   z-index: 900;
-}
-
-/* All spans under #nav-header */
-#nav-header > span {
-  font-family: sans-serif;
-  color: white;
-  font-size: 15px;
-  font-weight: 300;
-  margin: 14px 10px;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
 }
 
 /* Visited links under #nav-header */
 #nav-header a, a:visited {
   color: white;
   text-decoration: none;
+  margin-right: 10px;
 }
 
 /* Currently active link */
@@ -40,7 +31,7 @@ body {
 
 /* Hero poster */
 #hero {
-  background-image: url(max-hero9.jpg);
+  background-image: url(spkr-hero.jpg);
   background-size: cover;
   height: 160px;
 }
@@ -51,34 +42,75 @@ body {
   font-size: 16px;
 }
 
-/* YouTube player iFrame */
-#ytplayer {
-  margin-top: 25px;
-  width: 100%;
-  height: 260px;
+
+.card {
+  width: 350px;
+  height: 300px;
+  background-size: 350px 300px;
+  background-repeat: no-repeat;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 15px;
 }
 
-/* BELOW IS THE CSS STYLING FOR THE SWIPEABLE
-   IMAGE GALLERY WE DIDN'T COVER THE 1ST WEEKEND.
-   FEEL FREE TO LEAVE THIS FOR NEXT SATURDAY
-   WHEN WE WILL TALK ABOUT HOW TO BUILD IT */
-
-/* Horizontal image gallery */
-.gallery {
-  margin: 25px auto;
-  overflow-x: scroll;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
+.cast {
+  position: relative;
+  left: 15px;
+  top: 195px;
+  width: 90%;
+  max-height: 15px;
+  overflow: hidden;
+  font-weight: bold;
+  color: white;
 }
 
-.gallery img {
-  width: 95%;
+.description {
+  position: relative;
+  left: 0;
+  top: 310px;
+  width: 90%;
+  overflow: hidden;
+  font-size: 15px;
+  font-style: italic;
+  color: #555;
+  margin: 0 auto;
 }
 
-.gallery::-webkit-scrollbar { 
-  display: none; 
+.submitted {
+  position: relative;
+  left: 15px;
+  top: 325px;
+  width: 90%;
+  overflow: hidden;
+  font-size: 15px;
+  color: #999;
 }
 
-.gallery ul li {
-  display: inline;
+.notes {
+  position: relative;
+  left: 15px;
+  top: 325px;
+  height: 40px;
+  width: 190px;
+  color: gray;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.more {
+  left: 330px;
+  top: 280px;
+  position: relative;
+}
+
+.share {
+  left: 340px;
+  top: 280px;
+  position: relative;
+}
+
+.favorite {
+  left: 350px;
+  top: 280px;
+  position: relative;
 }
